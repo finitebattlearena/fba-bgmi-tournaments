@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="FBA Finite Battle Arena Esports - Daily BGMI Tournaments">
+
+    <title>FBA Finite Battle Arena | BGMI Tournaments</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Website CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+====================================================== -->
+
+<header class="site-header">
+
+    <div class="container nav">
+
+        <a href="#home"
+           class="brand">
+
+            <img src="assets/logo.jpg"
+                 alt="FBA Finite Battle Arena Esports">
+
+        </a>
+
+
+        <nav>
+
+            <a href="#tournaments">
+                Tournaments
+            </a>
+
+            <a href="#how">
+                How to Join
+            </a>
+
+            <a href="#rules">
+                Rules
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a href="#tournaments"
+           class="btn btn-small">
+
+            Join Tournament
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO SECTION
+====================================================== -->
+
+<section id="home"
+         class="hero">
+
+    <div class="container hero-grid">
+
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                FBA • FINITE BATTLE ARENA ESPORTS
+            </span>
+
+
+            <h1>
+
+                DAILY
+                <span>BGMI</span>
+                <br>
+                TOURNAMENTS
+
+            </h1>
+
+
+            <p class="hero-text">
+
+                Compete in daily WOW and TDM tournaments.
+                Choose your mode, complete the payment and
+                submit your registration details.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a href="#tournaments"
+                   class="btn">
+
+                    View Tournaments
+
+                </a>
+
+
+                <button class="btn btn-ghost"
+                        onclick="openPayment()">
+
+                    View Payment QR
+
+                </button>
+
+            </div>
+
+
+            <div class="trust-row">
+
+                <div>
+
+                    <strong>4</strong>
+
+                    <span>
+                        Daily Formats
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>₹50+</strong>
+
+                    <span>
+                        Entry Fees
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong>₹350</strong>
+
+                    <span>
+                        Listed Winner Prize
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO CARD -->
+
+        <div class="hero-card">
+
+            <p class="mini-label">
+                TODAY'S ARENA
+            </p>
+
+
+            <h2>
+                Choose Your Mode
+            </h2>
+
+
+            <div class="mode-chip">
+                WOW • 4v4
+            </div>
+
+            <div class="mode-chip">
+                TDM • SOLO
+            </div>
+
+            <div class="mode-chip">
+                TDM • DUO
+            </div>
+
+            <div class="mode-chip">
+                TDM • SQUAD
+            </div>
+
+
+            <button class="btn full"
+                    onclick="scrollToSection('tournaments')">
+
+                Register Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TOURNAMENTS
+====================================================== -->
+
+<section id="tournaments"
+         class="section">
+
+    <div class="container">
+
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    DAILY MATCHES
+                </span>
+
+                <h2>
+                    Choose Your Tournament
+                </h2>
+
+            </div>
+
+
+            <span class="date-badge"
+                  id="today">
+
+            </span>
+
+        </div>
+
+
+
+        <div class="tournament-grid">
+
+
+            <!-- WOW -->
+
+            <article class="tournament-card featured">
+
+                <div class="card-top">
+
+                    <span class="tag">
+                        WOW MODE
+                    </span>
+
+                    <span class="daily">
+                        DAILY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    BGMI WOW 4v4
+                </h3>
+
+
+                <p>
+                    19 rounds • 4 players per side
+                </p>
+
+
+                <div class="money">
+
+                    <div>
+
+                        <small>
+                            ENTRY
+                        </small>
+
+                        <strong>
+                            ₹200
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            WINNER
+                        </small>
+
+                        <strong>
+                            ₹350
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button class="btn full"
+                        onclick="openRegistration(
+                        'BGMI WOW 4v4',
+                        200,
+                        350
+                        )">
+
+                    Register
+
+                </button>
+
+            </article>
+
+
+
+            <!-- TDM SOLO -->
+
+            <article class="tournament-card">
+
+                <div class="card-top">
+
+                    <span class="tag">
+                        TDM
+                    </span>
+
+                    <span class="daily">
+                        DAILY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    TDM Solo
+                </h3>
+
+
+                <p>
+                    AR only • Solo
+                </p>
+
+
+                <div class="money">
+
+                    <div>
+
+                        <small>
+                            ENTRY
+                        </small>
+
+                        <strong>
+                            ₹50
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            WINNER
+                        </small>
+
+                        <strong>
+                            ₹80
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button class="btn full"
+                        onclick="openRegistration(
+                        'TDM Solo',
+                        50,
+                        80
+                        )">
+
+                    Register
+
+                </button>
+
+            </article>
+
+
+
+            <!-- TDM DUO -->
+
+            <article class="tournament-card">
+
+                <div class="card-top">
+
+                    <span class="tag">
+                        TDM
+                    </span>
+
+                    <span class="daily">
+                        DAILY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    TDM Duo
+                </h3>
+
+
+                <p>
+                    AR only • Duo
+                </p>
+
+
+                <div class="money">
+
+                    <div>
+
+                        <small>
+                            ENTRY
+                        </small>
+
+                        <strong>
+                            ₹100
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            WINNER
+                        </small>
+
+                        <strong>
+                            ₹180
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button class="btn full"
+                        onclick="openRegistration(
+                        'TDM Duo',
+                        100,
+                        180
+                        )">
+
+                    Register
+
+                </button>
+
+            </article>
+
+
+
+            <!-- TDM SQUAD -->
+
+            <article class="tournament-card">
+
+                <div class="card-top">
+
+                    <span class="tag">
+                        TDM
+                    </span>
+
+                    <span class="daily">
+                        DAILY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    TDM Squad
+                </h3>
+
+
+                <p>
+                    AR only • Squad
+                </p>
+
+
+                <div class="money">
+
+                    <div>
+
+                        <small>
+                            ENTRY
+                        </small>
+
+                        <strong>
+                            ₹200
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <small>
+                            WINNER
+                        </small>
+
+                        <strong>
+                            ₹350
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button class="btn full"
+                        onclick="openRegistration(
+                        'TDM Squad',
+                        200,
+                        350
+                        )">
+
+                    Register
+
+                </button>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HOW TO JOIN
+====================================================== -->
+
+<section id="how"
+         class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-head">
+
+            <div>
+
+                <span class="eyebrow">
+                    QUICK START
+                </span>
+
+                <h2>
+                    How To Join
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Select a Mode
+                </h3>
+
+                <p>
+                    Choose the BGMI tournament
+                    you want to play.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Pay Entry Fee
+                </h3>
+
+                <p>
+                    Scan the UPI QR code and
+                    complete your payment.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Submit Details
+                </h3>
+
+                <p>
+                    Enter your BGMI ID and
+                    payment transaction ID.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Get Match Details
+                </h3>
+
+                <p>
+                    The organiser confirms your
+                    registration and shares the
+                    match information.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RULES
+====================================================== -->
+
+<section id="rules"
+         class="section">
+
+    <div class="container two-col">
+
+
+        <div>
+
+            <span class="eyebrow">
+                PLAYER INFO
+            </span>
+
+            <h2>
+                Rules & Notes
+            </h2>
+
+        </div>
+
+
+        <div class="rules-list">
+
+
+            <p>
+
+                <b>01.</b>
+
+                Submit the correct BGMI
+                name/ID and transaction ID.
+
+            </p>
+
+
+            <p>
+
+                <b>02.</b>
+
+                Match timing and room
+                details will be communicated
+                by the organiser.
+
+            </p>
+
+
+            <p>
+
+                <b>03.</b>
+
+                Cheating, hacks, exploits
+                or unauthorised modifications
+                are prohibited.
+
+            </p>
+
+
+            <p>
+
+                <b>04.</b>
+
+                Prize distribution is subject
+                to organiser verification and
+                the published tournament rules.
+
+            </p>
+
+
+            <p>
+
+                <b>05.</b>
+
+                Participants should follow
+                applicable laws, platform rules
+                and age requirements.
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+====================================================== -->
+
+<section id="contact"
+         class="section contact-section">
+
+    <div class="container contact-box">
+
+
+        <div>
+
+            <span class="eyebrow">
+                FBA ESPORTS
+            </span>
+
+            <h2>
+                Ready For The Next Match?
+            </h2>
+
+            <p>
+                Register for your preferred
+                tournament and contact the
+                organiser if you need assistance.
+            </p>
+
+        </div>
+
+
+        <div class="contact-actions">
+
+            <button class="btn"
+                    onclick="openPayment()">
+
+                Payment QR
+
+            </button>
+
+
+            <a class="btn btn-ghost"
+               id="whatsappLink"
+               href="#"
+               target="_blank">
+
+                WhatsApp
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <span>
+
+            © <span id="year"></span>
+            FBA Finite Battle Arena Esports
+
+        </span>
+
+
+        <span>
+            BGMI Tournament Portal
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     PAYMENT QR MODAL
+====================================================== -->
+
+<div class="modal"
+     id="paymentModal">
+
+    <div class="modal-backdrop"
+         onclick="closeModal('paymentModal')">
+    </div>
+
+
+    <div class="modal-box payment-box">
+
+        <button class="close"
+                onclick="closeModal('paymentModal')">
+
+            ×
+
+        </button>
+
+
+        <span class="eyebrow">
+            UPI PAYMENT
+        </span>
+
+
+        <h2>
+            Scan To Pay
+        </h2>
+
+
+        <img src="assets/payment-qr.png"
+             class="qr"
+             alt="UPI Payment QR Code">
+
+
+        <p class="upi">
+
+            UPI ID:
+
+            <b>
+                aniketkrisingha5-1@oksbi
+            </b>
+
+        </p>
+
+
+        <p class="small-note">
+
+            After payment, keep your transaction
+            or reference ID ready for registration.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     REGISTRATION MODAL
+====================================================== -->
+
+<div class="modal"
+     id="registrationModal">
+
+    <div class="modal-backdrop"
+         onclick="closeModal('registrationModal')">
+    </div>
+
+
+    <div class="modal-box">
+
+
+        <button class="close"
+                onclick="closeModal('registrationModal')">
+
+            ×
+
+        </button>
+
+
+        <span class="eyebrow">
+            REGISTRATION
+        </span>
+
+
+        <h2 id="regTitle">
+            Tournament
+        </h2>
+
+
+        <div class="selected-summary">
+
+            <span>
+
+                Entry:
+
+                <b id="regFee">
+                    ₹0
+                </b>
+
+            </span>
+
+
+            <span>
+
+                Winner:
+
+                <b id="regPrize">
+                    ₹0
+                </b>
+
+            </span>
+
+        </div>
+
+
+
+        <form id="registrationForm">
+
+
+            <input type="hidden"
+                   id="selectedTournament">
+
+
+
+            <label>
+
+                Player / Team Name
+
+                <input
+                    type="text"
+                    id="playerName"
+                    placeholder="Enter your name"
+                    required>
+
+            </label>
+
+
+
+            <label>
+
+                BGMI Character ID
+
+                <input
+                    type="text"
+                    id="bgmiId"
+                    placeholder="Enter BGMI ID"
+                    required>
+
+            </label>
+
+
+
+            <label>
+
+                WhatsApp Number
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="10-digit number"
+                    required>
+
+            </label>
+
+
+
+            <label>
+
+                Payment Transaction ID
+
+                <input
+                    type="text"
+                    id="txn"
+                    placeholder="UPI transaction/reference ID"
+                    required>
+
+            </label>
+
+
+
+            <button
+                class="btn full"
+                type="submit">
+
+                Submit Registration
+
+            </button>
+
+
+        </form>
+
+
+        <p class="small-note">
+
+            After submitting, WhatsApp will open
+            with your registration details.
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
